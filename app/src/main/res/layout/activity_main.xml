@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:id="@+id/imageParent"
+        android:layout_width="wrap_content"
+        android:layout_height="300dp">
+
+        <ImageView
+            android:id="@+id/backgrounImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorCardBackground"
+            android:scaleType="centerCrop" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/item_gradient_transparent" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/foregroundCardParent"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            app:cardBackgroundColor="@color/colorCardBackground"
+            app:cardCornerRadius="5dp"
+            app:cardElevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp">
+
+            <ImageView
+                android:id="@+id/foregroundImage"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+        <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Walkthrough"
+        android:backgroundTint="@color/colorAccent"
+        android:textColor="@android:color/white"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnStartWalkthrough"
+        android:layout_centerInParent="true"/>
+
+</RelativeLayout>
