@@ -89,7 +89,7 @@ public class WalkthroughItemView {
     }
 
     private void loadDesc() {
-        item_desc.setText(arrayList.get(position).getDescription());
+        item_desc.setText(arrayList.get(position).getDescription() + "\n\n\n");
     }
 
     private void loadForegroundImage() {
