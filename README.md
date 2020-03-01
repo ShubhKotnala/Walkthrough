@@ -20,7 +20,7 @@ allprojects {
 #### In the app level build.gradle
 ```
 dependencies {
-  compile 'agency.tango.android:material-intro-screen:{latest_release}'
+    implementation 'com.github.ShubhKotnala:Walkthrough:{latest-release}'
 }
 ```
 ### Step 2:
